@@ -72,7 +72,7 @@ Me baso en los siguientes elementos logrados a lo largo del curso:
 2. **Dominio técnico:** No solo conozco la teoría, sino que he demostrado capacidad para implementarla. Sé cómo levantar un sistema de diseño estructurado en Figma, y tengo destreza en el uso de repositorios (GitHub) para documentar el proceso de UX Research, acercándome a los estándares reales de la industria.
 3. **Capacidad de auditoría:** Me considero plenamente capaz de enfrentarme a un producto digital existente, auditarlo bajo los 10 principios heurísticos de Nielsen, someterlo a pruebas de *A/B testing* o administrar un formulario SUS, e interpretar esos datos estadísticos para redactar un informe de mejoras accionables y justificadas.
 
-## 7. Competencias Transversales y Profesionales Adquiridas
+## 7. Competencias Adquiridas
 
 A lo largo del desarrollo de este caso de estudio y de las prácticas asociadas, he consolidado una serie de competencias fundamentales:
 
