@@ -97,6 +97,8 @@ Dado que esta app se utilizará físicamente caminando por los Paseíllos Univer
 
 Se ha desarrollado un prototipo estático para ilustrar la propuesta de valor de la **EcoUGR App**. El diseño se ha modelizado siguiendo el diseño *Mobile-First*, garantizando una interfaz facil de navegar y altamente orientada a la acción en móvil. Se aplican las pautas descritas en la sección anterior (botones accesibles, alto contraste y modelos mentales reconocibles):
 
+* **[ENLACE A FIGMA MAKE](https://www.figma.com/make/nki1dRgNLeD1lixtV6scvq/Home-and-Activity-Reservation?t=HaKS0zTEMW6Zib4a-1)**
+
 ### 5.1. Pantalla Principal (Dashboard y Actividades)
 
 La pantalla no abruma con catálogos interminables. Centraliza la atención en el próximo evento y limita las opciones a las actividades del día.
