@@ -13,7 +13,7 @@
 
 El ecosistema digital de *Nuestras Huertas* divide su catálogo en secciones lógicas ("La Huerta", "Nosotros y Productores", "Cómo comprar"), pero presenta errores graves respecto a flujo de información.
 
-| Heurística Violada | Descripción del Problema en nuestrashuertas.com | Evidencia Visual (Captura) | Nivel de Gravedad (1-4) |
+| Heurística Incumplida | Descripción del Problema | Evidencia Visual | Nivel de Gravedad (1-4) |
 | :--- | :--- | :--- | :---: |
 | #1 Visibilidad del estado del sistema | Al añadir un producto al carrito desde la lista, el icono de carga es muy sutil y no hay un mensaje claro de confirmación. | `[Ver img_01]` | 3 |
 | #4 Consistencia y estándares | Algunos productos se venden por "Unidad" y otros por "Peso", pero la interfaz de los botones `+` y `-` es idéntica, lo que confunde sobre qué se está sumando. | `[Ver img_02]` | 3 |
