@@ -50,10 +50,10 @@ La plataforma muestra deficiencias en el diseño táctil (*Touch Targets*). Los 
 
 ## 3. Insights y Propuesta de Valor: ECO MERCADO UGR
 
-A partir de la auditoría anterior y la lectura del contexto del Eco Mercado UGR (iniciativa universitaria, productores locales, comercio justo), se extraen los siguientes *insights* accionables:
+A partir de la auditoría anterior y la lectura del contexto del Eco Mercado UGR, se extraen los siguientes *insights* accionables:
 
-1. **Insight de Confianza:** El usuario universitario/PDI está concienciado, pero tiene poco tiempo. Necesita transparencia absoluta en el precio y el origen del producto sin tener que investigar.
-2. **Insight Logístico:** La compra al peso en el entorno digital genera ansiedad. Es preferible estandarizar formatos (cestas cerradas o *packs* de "1 Kg aproximado") para agilizar la toma de decisiones.
+1. **Insight de Confianza:** El usuario universitario/PDI está concienciado, pero tiene poco tiempo. Necesita transparencia absoluta en el precio (así como un cálculo ágil de este) y el origen del producto sin tener que investigar.
+2. **Insight Logístico:** El entorno digital genera ansiedad. Es preferible estandarizar formatos, disminuir texto, aumentar tamaño de letra y distinguir elementos importantes para agilizar la toma de decisiones. También es importante tener una buena jerarquía y navegación.
 
 ### Propuesta de Valor (Value Proposition)
 
