@@ -57,29 +57,69 @@ A partir de la auditoría anterior y la lectura del contexto del Eco Mercado UGR
 
 ### Propuesta de Valor (Value Proposition)
 
-**"Eco Mercado UGR App: Del productor a tu facultad en 3 clics."**
-Una aplicación *Mobile-First* que conecta de forma transparente a los productores agroecológicos de Granada con la comunidad UGR. Su pilar es la **fricción cero**: estandarización de formatos de venta (cestas semanales, productos por lotes claros), perfiles detallados de cada productor local (fomentando el comercio ético) y puntos de recogida sincronizados con los campus universitarios.
+"EcoUGR App: Tu programa interactivo y tarjeta de fidelidad para el Ecomercado."
+
+En lugar de crear un e-commerce complejo (que requeriría logística de envíos y pasarelas de pago), la propuesta consiste en una WebApp ligera enfocada en la información y la fidelización. Su objetivo realizable es agrupar toda la información dispersa del evento en un solo lugar y premiar a los estudiantes/profesores que asisten presencialmente.
 
 ---
 
-## 4. Planteamiento del Diseño (Mockup Concept)
+## 4. Planteamiento de la Propuesta de Diseño (Objetivos Realistas y UX)
 
-Se propone el diseño de un prototipo interactivo en vista móvil (basado en componentes *Atomic Design* en Figma) estructurado en dos pantallas clave para resolver los problemas detectados en *Nuestras Huertas*:
+El diseño se centrará en tres funcionalidades básicas y viables a nivel de programación, justificadas bajo las leyes de usabilidad:
 
-**Pantalla 1: *Landing* / Catálogo Eficiente**
+### Objetivo 1: El Mapa y Directorio Visual
 
-* **Arquitectura:** Navegación inferior (*Bottom Navigation Bar*) con iconos gruesos y accesibles (Inicio, Cestas, Productores, Perfil).
-* **UI/Layout:** En lugar de una lista interminable, la pantalla principal prioriza *Cards* grandes para las "Cestas de Temporada" (ej. "Cesta Estudiante 5Kg" - Precio cerrado).
-* **Solución UX:** Los botones de "Añadir al carrito" ocupan todo el ancho disponible (*Full-width button*). Los precios son finales y absolutos, eliminando el cálculo mental de `€/kg`.
+**¿Qué hace?** Muestra un mapa simple de los Paseíllos Universitarios con los puestos numerados. Al pulsar un número, aparece quién es el productor (ej. "Huerta de la Vega") y qué vende hoy (ej. "Verduras, Quesos, Miel").
 
-**Pantalla 2: Ficha de Transparencia del Productor**
+* **Justificación UX (Heurística #1 de Nielsen - Visibilidad del estado del sistema):** El usuario ya no llega "a ver qué hay". Sabe de antemano si el productor que busca ha montado su puesto ese día. Se elimina la frustración de hacer el viaje en vano, mejorando la retención de usuarios.
 
-* **Arquitectura:** Al pulsar sobre un producto (ej. Tomates de la Vega), la pantalla no solo muestra la información nutricional, sino una ficha del productor local vinculada.
-* **Solución UX:** Cumple con la heurística de "Relación entre el sistema y el mundo real". Humaniza la compra mostrando quién cultivó el alimento y a cuántos kilómetros de la universidad se encuentra la huerta (cálculo de huella de carbono).
+### Objetivo 2: Reserva de Actividades en 1 Clic
 
-*(Nota para la entrega: Se recomienda adjuntar en la carpeta `/img` de tu repositorio 1 o 2 bocetos rápidos hechos en Figma o dibujados a mano, escaneados, que representen estas dos pantallas de la App Eco Mercado UGR).*
+**¿Qué hace?** El Ecomercado tiene talleres (ej. "Taller de compostaje"). La app muestra la agenda y permite reservar plaza pulsando un solo botón, utilizando el inicio de sesión único (SSO) de la universidad (`@ugr.es`).
+
+* **Justificación UX:** Se elimina el clásico y tedioso formulario de Google Forms. A diferencia del inmenso formulario que vimos en el ejemplo evaluado; al usar la cuenta de la UGR, los datos (nombre y correo) ya están validados. El usuario solo pulsa un botón grande en su pantalla. A menos opciones y pasos, mayor es la inscripción a la actividad.
+
+### Objetivo Realista 3: Tarjeta de Fidelización Digital mediante QR (Gamificación básica)
+
+**¿Qué hace?** Para incentivar que los estudiantes vayan al mercado físico, la app incluye un código QR personal. Al comprar algo en cualquier puesto, el productor escanea el QR. Si el estudiante acumula 3 compras en el mes, la UGR le regala una bolsa de tela reutilizable o un café en la cafetería de su facultad.
+
+* **Justificación UX (Heurística #2 - Relación con el mundo real):** Digitalizamos un modelo mental que todos los usuarios ya comprenden y saben usar. Esto crea un bucle de enganche positivo sin necesidad de desarrollar un sistema complejo de puntos.
+
+### 4.1. Accesibilidad y Entorno de Uso
+
+Dado que esta app se utilizará físicamente caminando por los Paseíllos Universitarios (exteriores, a plena luz del día y con prisas):
+
+* **Contraste y eficiencia:** El diseño será de **alto contraste**, utilizando fondos claros y tipografía gruesa. Se evitará la sobrecarga de imágenes pesadas, asegurando que la WebApp cargue en menos de 3 segundos incluso con los datos móviles lentos que suele haber en aglomeraciones dentro del campus.
 
 ---
+
+## 5. Mockups: Propuesta Visual (EcoUGR App)
+
+Se ha desarrollado un prototipo estático para ilustrar la propuesta de valor de la **EcoUGR App**. El diseño se ha modelizado siguiendo el diseño *Mobile-First*, garantizando una interfaz facil de navegar y altamente orientada a la acción en móvil. Se aplican las pautas descritas en la sección anterior (botones accesibles, alto contraste y modelos mentales reconocibles):
+
+### 5.1. Pantalla Principal (Dashboard y Actividades)
+
+La pantalla no abruma con catálogos interminables. Centraliza la atención en el próximo evento y limita las opciones a las actividades del día.
+* **Accesibilidad Táctil:** Los botones de "Inscribirse con @ugr.es" están diseñados como *Touch Targets* masivos de ancho completo. Al estar situados en las propias tarjetas, se reduce el tiempo de apuntado y se minimizan los errores táctiles.
+* **Visibilidad del Sistema:** La cabecera ubica al usuario temporalmente (cuenta atrás para el próximo mercado), eliminando la necesidad de buscar fechas en webs externas.
+
+![Home EcoUGR](Img/mockup_home.png)
+
+
+
+### 5.2. Pantalla de Fidelización (Pasaporte Ético)
+
+El diseño emula la clásica tarjeta para sellar (con 3 círculos de progreso). Se digitaliza un modelo mental universal, por lo que el usuario entiende su funcionamiento sin curva de aprendizaje.
+* **Diseño Estético y Minimalista:** Al usarse esta pantalla físicamente, se han eliminado todos los elementos secundarios. El QR domina el centro con amplios márgenes blancos para garantizar un escaneo rápido.
+* **Contraste y Legibilidad:** Los textos motivacionales y el progreso ("Te faltan 2 para un café gratis") emplean tipografía gruesa y un alto contraste sobre fondo claro, asegurando su legibilidad en el exterior de los Paseíllos Universitarios bajo la luz solar.
+
+
+![Fidelización EcoUGR](Img/mockup_qr.png)
+
+
+
+---
+
 
 ## 5. Conclusiones y Autoevaluación Práctica
 
