@@ -121,13 +121,23 @@ El diseño emula la clásica tarjeta para sellar (con 3 círculos de progreso). 
 ---
 
 
-## 5. Conclusiones y Autoevaluación Práctica
+## 6. Análisis Final y Autoevaluación: De la Práctica al Mundo Real
 
-Realizar este análisis como consultor externo me ha permitido auditar mi propia evolución técnica. Al enfrentar un caso real como *Nuestras Huertas*, he aplicado de forma natural y automática los principios que tanto esfuerzo costó interiorizar durante la práctica de **Cyber-Gourmet**: la jerarquía visual, la necesidad imperiosa de *Touch Targets* accesibles en móvil y la prevención de errores (gestión de la fricción cognitiva).
+La elaboración de esta propuesta para el Ecomercado UGR me ha servido como un ejercicio de reflexión y validación de las competencias adquiridas durante la asignatura.
 
-**Análisis comparativo con las prácticas:**
+### 6.1. Caso de estudio
 
-* **Lo aplicado:** He logrado trasladar la capacidad de análisis crítico adquirida. Al igual que cuando evaluamos *Punto Café* (Caso B), he detectado inmediatamente cómo una arquitectura de información ambigua (como mezclar unidades y pesos) puede destruir la conversión de un *e-commerce*.
-* **Lo que ha faltado (Limitaciones del estudio rápido):** En un entorno profesional real (o con más tiempo), este ejercicio requeriría la elaboración formal de un *User Journey Map* del estudiante de la UGR, y la ejecución de un **Test A/B** o la administración de un **Cuestionario SUS** sobre el prototipo propuesto para validar si nuestra hipótesis de "cestas de precio cerrado" realmente reduce la ansiedad de compra frente al modelo tradicional de "compra al peso".
+Visualmente hablando, me he centrado en la simplificación de opciones y la creación de botones masivos para una fácil interacción. Además, he replicado el rigor en el diseño visual aprendido en Figma, estructurando la información, utilizando jerarquías tipográficas y asegurando el contraste de color (WCAG).
 
-En definitiva, este caso de estudio demuestra que las metodologías de UX Research y UI Design no son exclusivas de plataformas tecnológicas complejas, sino que son herramientas vitales para el éxito y la accesibilidad de iniciativas de impacto social y ecológico como el Eco Mercado UGR.
+### 6.2. Lo que ha faltado en este caso
+
+El principal déficit de esta propuesta para el EcoUGR es la **ausencia de validación empírica**.
+En las prácticas de la asignatura, aprendí que ningún diseño es válido hasta que se testea con usuarios reales. Este caso de estudio se ha quedado en la fase de ideación y evaluación heurística.
+Para que el caso EcoUGR fuera un proyecto real completo, faltaría rrealizar evaluaciones con estudiantes reales utilizando el prototipo de Figma en un móvil.
+
+
+### 6.3. Conclusión
+
+A modo de autoevaluación, considero que mi nivel de preparación para afrontar el diseño de un producto digital en un entorno real es sólido. La evolución es evidente: he pasado de justificar mis diseños con argumentos subjetivos a defender decisiones basadas en leyes psicológicas (modelos mentales), normativas de accesibilidad (WCAG) y métricas cuantitativas.
+
+Aunque todavía necesito perfeccionar la ejecución técnica, comprendo el ciclo de vida iterativo del Diseño Centrado en el Usuario. Entiendo que debo resolver problemas de comunicación entre el sistema y el humano, minimizando la confusión y aportando un valor tangible al modelo de negocio o, como en este caso, a una iniciativa comunitaria y ecológica.
