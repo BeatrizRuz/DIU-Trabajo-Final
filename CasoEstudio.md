@@ -7,22 +7,42 @@
 
 ---
 
-## 2. Auditoría UX/UI: Análisis de "Nuestras Huertas"
+## 2. Análisis de "Nuestras Huertas"
 
 ### 2.1. Usabilidad y Arquitectura de la Información (Heurísticas de Nielsen)
 
-El ecosistema digital de *Nuestras Huertas* divide su catálogo en secciones lógicas ("Huerto", "Despensa", "Cestas"), pero presenta vulnerabilidades graves en el flujo de compra.
+El ecosistema digital de *Nuestras Huertas* divide su catálogo en secciones lógicas ("La Huerta", "Nosotros y Productores", "Cómo comprar"), pero presenta errores graves respecto a flujo de información.
 
-* **Prevención de errores (Heurística #5):** El sistema de selección de productos genera alta carga cognitiva y propensión al error. Al listar productos como el *"Aguacate Cocktail Mini"*, el precio base se muestra en `€/kg`, pero el selector de cantidad (`+` / `-`) añade unidades discretas (Uds) sin aclarar dinámicamente el impacto en el precio final ni el peso estimado por unidad. El usuario no sabe con certeza cuánto pagará hasta llegar al carrito.
-* **Visibilidad del estado del sistema (Heurística #1):** Falta *feedback* visual inmediato al añadir productos al carrito en la vista de catálogo. Si la conexión es lenta, el usuario puede pulsar repetidamente el botón `+`, añadiendo kilos indeseados.
-* **Flexibilidad y eficiencia de uso (Heurística #7):** El catálogo (con más de 114 resultados en la categoría "Huerto") carece de un sistema de filtrado avanzado eficiente. Solo permite ordenar por "precio" o "popularidad", ignorando filtros vitales para el usuario objetivo como "Certificación Ecológica", "Temporada" o "Alérgenos".
+| Heurística Violada | Descripción del Problema en nuestrashuertas.com | Evidencia Visual (Captura) | Nivel de Gravedad (1-4) |
+| :--- | :--- | :--- | :---: |
+| #1 Visibilidad del estado del sistema | Al añadir un producto al carrito desde la lista, el icono de carga es muy sutil y no hay un mensaje claro de confirmación. | `[Ver img_01]` | 3 |
+| #4 Consistencia y estándares | Algunos productos se venden por "Unidad" y otros por "Peso", pero la interfaz de los botones `+` y `-` es idéntica, lo que confunde sobre qué se está sumando. | `[Ver img_02]` | 3 |
+| #8 Diseño estético y minimalista | La sobrecarga de texto en las tarjetas de producto dificulta el escaneo rápido del catálogo en la versión móvil. | `[Ver img_03]` | 2 |
+| #5 Prevención de errores | No hay advertencias si se intenta comprar una cantidad de producto que excede el stock habitual antes de ir al carrito. | `[Ver img_04]` | 2 |
 
 ### 2.2. Diseño Visual y Accesibilidad (WCAG)
 
-* **Contraste y Legibilidad:** Las jerarquías tipográficas no están bien definidas. Los títulos de los productos compiten visualmente con las etiquetas de precio y los botones de acción.
-* **Accesibilidad Cognitiva:** La mezcla de formatos de venta (productos que se cobran "al peso" frente a productos "por unidad" en la misma vista de lista) viola el principio de consistencia. El usuario debe leer la "letra pequeña" de cada tarjeta de producto para entender cómo está comprando.
+| Criterio Evaluado | Estado | Herramienta de Diagnóstico | Observaciones y Fricciones |
+| :--- | :---: | :--- | :--- |
+| **Contraste de color (Texto/Fondo)** | ⚠️ Regular | Extensión WAVE | Algunos textos secundarios sobre fondos claros no alcanzan el ratio mínimo de 4.5:1. |
+| **Jerarquía de Encabezados (H1, H2)** | ❌ Falla | Extensión WAVE | Saltos en la jerarquía lógica de etiquetas que dificulta la lectura con lectores de pantalla. |
+| **Tamaño de Touch Targets (Móvil)** | ❌ Falla | Chrome DevTools | Los selectores de paginación y de cantidad son demasiado pequeños para interacción táctil fluida. |
+| **Navegación por Teclado (Focus)** | ✅ Cumple | Test manual (Tecla TAB) | Es posible navegar por los productos usando el tabulador, el foco es visible. |
 
-### 2.3. Adaptación a Dispositivos (Mobile First / Responsive)
+
+### 2.3. Análisis de Flujo de Interacción (User Journey de Compra)
+
+**Objetivo de la tarea:** Localizar "Cebollas", añadir 2 Kg al carrito y proceder a la pantalla de pago.
+
+| Paso | Acción del Usuario | Reacción del Sistema | Fricción Detectada (Pain Point) |
+| :---: | :--- | :--- | :--- |
+| 1 | Uso de la barra de búsqueda superior. | Muestra sugerencias en tiempo real. | Ninguna, funcionamiento correcto. |
+| 2 | Clic en el botón `+` para añadir cantidad. | Aumenta el número en el *input*. | La web no aclara si el "1" significa 1 Kg, 1 Malla o 1 Unidad hasta leer la descripción detallada. |
+| 3 | Clic en "Añadir al carrito". | Breve recarga y actualización del icono del carrito. | Falta de *feedback* inmersivo; el usuario no tiene claro si la acción tuvo éxito si no mira arriba a la derecha. |
+| 4 | Ir al Checkout (Pago). | Pantalla de resumen de pedido. | Formulario excesivamente largo; pide datos de facturación antes de asegurar la disponibilidad de envío a la zona. |
+
+
+### 2.4. Adaptación a Dispositivos (Mobile First / Responsive)
 
 Dado que el público objetivo interactúa mayoritariamente vía *smartphone*, la plataforma muestra deficiencias en el diseño táctil (*Touch Targets*). Los selectores de cantidad (`+` y `-`) son demasiado pequeños para el estándar de 44x44 píxeles recomendado por Apple/Google, lo que provoca *misclicks* recurrentes (pulsar el enlace del producto en lugar de añadir cantidad).
 
