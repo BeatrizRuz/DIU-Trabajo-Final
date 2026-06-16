@@ -16,9 +16,9 @@ El ecosistema digital de *Nuestras Huertas* divide su catálogo en secciones ló
 | Heurística Incumplida | Descripción del Problema | Evidencia Visual | Nivel de Gravedad (1-4) |
 | :--- | :--- | :--- | :---: |
 | #1 Visibilidad del estado del sistema | Al añadir un producto al carrito desde la lista, el icono de carga es muy sutil y no hay un mensaje claro de confirmación. Además, los números de cantidad son poco visibles. | ![Ejemplo_1](Img/img_01.png) | 4 |
-| #4 Consistencia y estándares | Algunos productos se venden por "Unidad" y otros por "Peso", pero la interfaz de los botones `+` y `-` es idéntica, lo que confunde sobre qué se está sumando. | ![Ejemplo_2](Img/img_02.png) | 3 |
-| #8 Diseño estético y minimalista | La sobrecarga de texto en las tarjetas de producto dificulta el escaneo rápido del catálogo en la versión móvil. | ![Ejemplo_3](Img/img_03.png) | 2 |
-| #5 Prevención de errores | No hay advertencias si se intenta comprar una cantidad de producto que excede el stock habitual antes de ir al carrito. | ![Ejemplo_4](Img/img_04.png) | 2 |
+| #4 Consistencia y estándares | Algunos productos se venden por "Unidad" y otros por "Peso", pero la interfaz de los botones `+` y `-` es idéntica, lo que confunde sobre qué se está sumando. | ![Ejemplo_2](Img/img_02.png) | 2 |
+| #5 Prevención de errores |  No hay advertencias si se intenta comprar una cantidad de producto que excede el stock habitual antes de ir al carrito. | ![Ejemplo_3](Img/img_03.png) | 2 |
+| #8 Diseño estético y minimalista | La sobrecarga de texto y reducido tamaño de este, dificulta el escaneo rápido de la información.| ![Ejemplo_4](Img/img_04.png) | 3 |
 
 ### 2.2. Diseño Visual y Accesibilidad (WCAG)
 
