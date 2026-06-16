@@ -24,10 +24,10 @@ El ecosistema digital de *Nuestras Huertas* divide su catálogo en secciones ló
 
 | Criterio Evaluado | Estado | Herramienta de Diagnóstico | Observaciones y Fricciones |
 | :--- | :---: | :--- | :--- |
-| **Contraste de color (Texto/Fondo)** | ⚠️ Regular | Extensión WAVE | Algunos textos secundarios sobre fondos claros no alcanzan el ratio mínimo de 4.5:1. |
-| **Jerarquía de Encabezados (H1, H2)** | ❌ Falla | Extensión WAVE | Saltos en la jerarquía lógica de etiquetas que dificulta la lectura con lectores de pantalla. |
-| **Tamaño de Touch Targets (Móvil)** | ❌ Falla | Chrome DevTools | Los selectores de paginación y de cantidad son demasiado pequeños para interacción táctil fluida. |
-| **Navegación por Teclado (Focus)** | ✅ Cumple | Test manual (Tecla TAB) | Es posible navegar por los productos usando el tabulador, el foco es visible. |
+| **Contraste de color (Texto/Fondo)** | Regular | Extensión WAVE | Algunos textos secundarios sobre fondos claros no alcanzan el ratio mínimo. |
+| **Jerarquía de Encabezados (H1, H2)** | Falla | Extensión WAVE | Saltos en la jerarquía lógica de etiquetas que dificulta la lectura con lectores de pantalla. |
+| **Tamaño de Touch Targets (Móvil)** | Falla | Chrome DevTools | Los selectores de paginación y de cantidad son demasiado pequeños para interacción táctil fluida. |
+| **Navegación por Teclado** | Cumple | Test manual (Tecla TAB) | Es posible navegar por los productos usando el tabulador, el foco es visible. |
 
 
 ### 2.3. Análisis de Flujo de Interacción (User Journey de Compra)
@@ -38,13 +38,13 @@ El ecosistema digital de *Nuestras Huertas* divide su catálogo en secciones ló
 | :---: | :--- | :--- | :--- |
 | 1 | Uso de la barra de búsqueda superior. | Muestra sugerencias en tiempo real. | Ninguna, funcionamiento correcto. |
 | 2 | Clic en el botón `+` para añadir cantidad. | Aumenta el número en el *input*. | La web no aclara si el "1" significa 1 Kg, 1 Malla o 1 Unidad hasta leer la descripción detallada. |
-| 3 | Clic en "Añadir al carrito". | Breve recarga y actualización del icono del carrito. | Falta de *feedback* inmersivo; el usuario no tiene claro si la acción tuvo éxito si no mira arriba a la derecha. |
+| 3 | Clic en "Añadir al carrito". | Breve recarga y agregación de texto ver carrito. | Falta de *feedback* inmersivo; el usuario no tiene claro si la acción tuvo éxito si no mira el carrito. |
 | 4 | Ir al Checkout (Pago). | Pantalla de resumen de pedido. | Formulario excesivamente largo; pide datos de facturación antes de asegurar la disponibilidad de envío a la zona. |
 
 
 ### 2.4. Adaptación a Dispositivos (Mobile First / Responsive)
 
-Dado que el público objetivo interactúa mayoritariamente vía *smartphone*, la plataforma muestra deficiencias en el diseño táctil (*Touch Targets*). Los selectores de cantidad (`+` y `-`) son demasiado pequeños para el estándar de 44x44 píxeles recomendado por Apple/Google, lo que provoca *misclicks* recurrentes (pulsar el enlace del producto en lugar de añadir cantidad).
+La plataforma muestra deficiencias en el diseño táctil (*Touch Targets*). Los selectores de cantidad (`+` y `-`) son demasiado pequeños para el estándar recomendado, lo que provoca *misclicks* recurrentes (pulsar el enlace del producto en lugar de añadir cantidad).
 
 ---
 
