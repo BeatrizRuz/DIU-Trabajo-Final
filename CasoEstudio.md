@@ -1,11 +1,9 @@
 
 # PARTE II: Caso de Estudio - Propuesta de Diseño ECO MERCADO UGR
 
-## 1. Introducción y Metodología de Análisis
+## 1. Caso seleccionado
 
-El presente caso de estudio tiene como objetivo diseñar una propuesta de valor digital para el **Eco Mercado UGR**, basándose en la auditoría UX de iniciativas reales de agroecología. Para ello, se ha seleccionado la plataforma **Nuestras Huertas** (Bustarviejo, Madrid - `nuestrashuertas.com`).
-
-El análisis se ha realizado bajo el rol de consultor UX/UI, aplicando metodologías de inspección objetivas: las 10 Heurísticas de Usabilidad de Jakob Nielsen y las directrices de Accesibilidad Web (WCAG 2.1). Las apreciaciones extraídas son cuantificables y sirven como base para la posterior ideación del producto digital para la Universidad de Granada.
+**Nuestras Huertas** (Bustarviejo, Madrid - `nuestrashuertas.com`).
 
 ---
 
